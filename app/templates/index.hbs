@@ -1,8 +1,16 @@
+{{outlet}}
+
 <h2>Welcome to HELL</h2>
 
 <h4>This is all about ME. If you don't like it, I don't like YOU.</h4>
 
 <h4>I hope you never find what you're looking for.</h4>
 
+<ul>
+  {{#each model as |alexa|}}
+    <li>{{alexa.writer}}'s {{alexa.name}} with {{alexa.bedrooms}} bedrooms</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}ABOUT ME{{/link-to}}
-{{#link-to 'contact'}}CONTACT ME NOW{{/link-to}}
+{{#link-to 'contact'}}contact ME{{/link-to}}

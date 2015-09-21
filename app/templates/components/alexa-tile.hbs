@@ -1,0 +1,9 @@
+{{yield}}
+
+<li>{{alexas.writer}}'s {{alexas.name}} with {{alexas.bedrooms}} bedrooms
+  {{#if isImageShowing }}
+   <p><img src={{alexas.image}} alt={{alexas.name}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'imageShow'}}>Show image</button>
+  {{/if}}
+</li>
